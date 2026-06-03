@@ -1,0 +1,17 @@
+[
+  {
+    "name": "冬至", "code": "0x82", "earthBranch": "子",
+    "longevity": "胎", "pcStep": 1, "permMod": "wake",
+    "_desc": "一阳来复，唤醒中断"
+  },
+  {
+    "name": "小寒", "code": "0x03", "earthBranch": "丑",
+    "longevity": "养", "pcStep": 1, "permMod": "stack",
+    "_desc": "堆栈构建"
+  },
+  {
+    "name": "芒种", "code": "0x7F", "earthBranch": "午",
+    "longevity": "帝旺", "pcStep": 3, "permMod": "overload",
+    "_desc": "阳极预警，乾卦0x7F"
+  }
+]
