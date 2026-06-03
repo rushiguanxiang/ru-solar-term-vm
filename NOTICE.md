@@ -1,0 +1,1 @@
+This project is rooted in the traditional Chinese cosmological framework of Cyclical Time. The concepts of Solar Terms, Sexagenary Cycle, and Nayin are not metaphors, but formal computational abstractions. We invite you to experience computing as a harmonious resonance with natural rhythms, rather than a conquest over linear time.
