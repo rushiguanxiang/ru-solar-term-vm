@@ -1,69 +1,98 @@
-# Prerequisites
-*.d
+# ==========================================
+# 🌿 Ru Language · Solar Term VM
+# .gitignore for Cyclical Computing Core
+# ==========================================
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# --------------------------
+# 1. 依赖与包管理 (Dependencies)
+# --------------------------
+node_modules/
+bower_components/
+jspm_packages/
+.pnp
+.pnp.js
+.yarn/install-state.gz
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# Build directories
+# --------------------------
+# 2. 构建与编译产物 (Build Artifacts)
+# --------------------------
+dist/
 build/
-Build/
-build-*/
+out/
+*.tsbuildinfo
+.rollup.cache
+.parcel-cache
+.turbo
 
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
+# --------------------------
+# 3. 运行时与虚拟机状态 (VM Runtime State)
+# ⚠️ 关键：节气VM的运行时快照/缓存不应入库
+# --------------------------
+*.wasm.map
+*.snap
+.vm-cache/
+.solar-term-state/
+.nayin-mmu-dump/
+core.*
+vgcore.*
 
-# Temporary files
-*.tmp
-*.log
-*.bak
+# --------------------------
+# 4. 环境与密钥 (Environment & Secrets)
+# --------------------------
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+.vercel
+.netlify
+
+# --------------------------
+# 5. IDE 与编辑器 (IDE & Editors)
+# --------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
 *.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
 
-# vcpkg
-vcpkg_installed/
+# --------------------------
+# 6. 操作系统垃圾文件 (OS Generated)
+# --------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
 
-# debug information files
-*.dwo
+# --------------------------
+# 7. 日志与调试 (Logs & Debug)
+# --------------------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+coverage/
+.nyc_output/
 
-# test output & cache
-Testing/
-.cache/
+# --------------------------
+# 8. 测试与基准测试临时文件 (Test & Benchmarks)
+# --------------------------
+benchmark-results/
+test-fixtures/temp/
+*.prof
+*.heapdump
+
+# ==========================================
+# 💡 注意：以下文件 *应该* 被提交
+# - /docs/*          (技术文档与文化注解)
+# - /demos/*         (卦序示例程序)
+# - LICENSE          (Apache 2.0)
+# - NOTICE.md        (文化渊源声明)
+# - README.md        (升维入口)
+# ==========================================
